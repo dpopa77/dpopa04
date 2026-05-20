@@ -151,7 +151,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-indigo-600 rounded-md flex items-center justify-center">
-              <span className="text-white text-xs font-bold">P</span>
+              <span className="text-white text-xs font-bold">✓</span>
             </div>
             <span className="font-bold text-slate-800">PrivaChek</span>
           </div>
