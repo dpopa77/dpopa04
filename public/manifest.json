@@ -1,0 +1,22 @@
+{
+  "name": "PrivaChek — GDPR Scanner",
+  "short_name": "PrivaChek",
+  "description": "Scan any website for GDPR compliance issues in seconds",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#4f46e5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
