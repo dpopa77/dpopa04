@@ -184,7 +184,7 @@ export default function Home() {
         </div>
 
         {/* Search box */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-2 shadow-sm mb-10 flex gap-2">
+        <div className="bg-white border border-slate-200 rounded-2xl p-2 shadow-sm mb-4 flex gap-2">
           <input
             className="flex-1 px-4 py-3 text-sm text-slate-800 placeholder-slate-300 focus:outline-none bg-transparent"
             placeholder="Enter website URL or app name"
@@ -199,6 +199,13 @@ export default function Home() {
           >
             {loading ? 'Scanning...' : 'Scan now'}
           </button>
+        </div>
+
+        {/* Footer links below search */}
+        <div className="flex justify-center gap-4 text-xs text-slate-300 mb-10">
+          <a href="/privacy" className="hover:text-indigo-400">Privacy Policy</a>
+          <a href="/terms" className="hover:text-indigo-400">Terms of Service</a>
+          <a href="mailto:privacy@privachek.org" className="hover:text-indigo-400">Contact</a>
         </div>
 
         {/* Error */}
@@ -261,7 +268,7 @@ export default function Home() {
             {/* Email capture */}
             <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-5">
               {emailSent ? (
-                <p className="text-indigo-700 text-sm font-medium text-center">✓ Thanks! We'll send your report shortly.</p>
+                <p className="text-indigo-700 text-sm font-medium text-center">✓ Thanks! We will send your report shortly.</p>
               ) : (
                 <>
                   <p className="text-slate-700 text-sm font-medium mb-3">📧 Get this report emailed to you</p>
@@ -399,10 +406,17 @@ export default function Home() {
               </div>
             )}
 
-            {/* Disclaimer */}
-            <p className="text-slate-400 text-xs text-center pb-8">
-              Scanned {result.scannedPages} page{result.scannedPages > 1 ? 's' : ''}. Results are informational only — not legal advice.
-            </p>
+            {/* Footer */}
+            <div className="text-center pb-8 space-y-2">
+              <p className="text-slate-400 text-xs">
+                Scanned {result.scannedPages} page{result.scannedPages > 1 ? 's' : ''}. Results are informational only — not legal advice.
+              </p>
+              <div className="flex justify-center gap-4 text-xs">
+                <a href="/privacy" className="text-indigo-400 hover:text-indigo-600">Privacy Policy</a>
+                <a href="/terms" className="text-indigo-400 hover:text-indigo-600">Terms of Service</a>
+                <a href="mailto:privacy@privachek.org" className="text-indigo-400 hover:text-indigo-600">Contact</a>
+              </div>
+            </div>
 
           </div>
         )}
