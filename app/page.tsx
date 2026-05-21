@@ -187,7 +187,7 @@ export default function Home() {
         <div className="bg-white border border-slate-200 rounded-2xl p-2 shadow-sm mb-10 flex gap-2">
           <input
             className="flex-1 px-4 py-3 text-sm text-slate-800 placeholder-slate-300 focus:outline-none bg-transparent"
-            placeholder="Website URL or app name — e.g. mapleparking.co.uk or Notion"
+            placeholder="Enter website URL or app name"
             value={url}
             onChange={e => setUrl(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleScan()}
